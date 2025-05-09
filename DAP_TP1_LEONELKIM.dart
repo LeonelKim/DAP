@@ -12,11 +12,11 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  final String usuarioValido = 'leokim';
-  final String contrasenaValida = '12345';
+  String usuarioValido = 'leokim';
+  String contrasenaValida = '12345';
 
-  final TextEditingController textController1 = TextEditingController();
-  final TextEditingController textController2 = TextEditingController();
+  TextEditingController textController1 = TextEditingController();
+  TextEditingController textController2 = TextEditingController();
 
   String mensaje = '';
 
@@ -45,8 +45,8 @@ class _MyAppState extends State<MyApp> {
               const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
-                  final inputUsuario = textController1.text.trim();
-                  final inputContrasena = textController2.text.trim();
+                  inputUsuario = textController1.text.trim();
+                  inputContrasena = textController2.text.trim();
 
                   setState(() {
                     if (inputUsuario.isEmpty && inputContrasena.isEmpty) {
