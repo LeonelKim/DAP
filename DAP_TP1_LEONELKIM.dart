@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -45,8 +46,8 @@ class _MyAppState extends State<MyApp> {
               const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
-                  inputUsuario = textController1.text.trim();
-                  inputContrasena = textController2.text.trim();
+                  String inputUsuario = textController1.text.trim();
+                  String inputContrasena = textController2.text.trim();
 
                   setState(() {
                     if (inputUsuario.isEmpty && inputContrasena.isEmpty) {
